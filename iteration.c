@@ -12,21 +12,18 @@ void getTestInput(int argc, char* argv[], int* a)
 int main(int argc, char* argv[]) 
 {
   // the divisor variable
-  int div = 2;
+  int div = 5;
   
   // for testing only - do not change
   getTestInput(argc, argv, &div);
 
   // add code below to complete 2.4 for any value of div 
-  int i = 0;
-
-  // standard for loop - from 0
-for (int i = 0; i < 100; i++)
+  printf("Looking for numbers divisble by %d\n", div);
+for (int i = 0; i < 101; i++)
  {
-  {
-   if (div%i == 0);
-   printf(" %d is divisble to %d\n", i, div);
+  if (i > 0 && i%div == 0)
+   {
+    printf("%d is divisble\n", i);
+   }
   }
-  i++;
- }
 }
