@@ -16,7 +16,7 @@ void arrayAdd(int* arrptr, int size, int inc)
 {
   int i;
   
-  for (i = 0; i < 7; i++)
+  for (i = 0; i < size; i++)
   {
   	*arrptr = *arrptr + inc;
 	arrptr++;
@@ -43,14 +43,14 @@ int main(int argc, char* argv[])
   // - fill it with the square of each index using a for loop i.e. 0, 1, 4, 9 etc
   // - pass the array to arrayAdd to add the increment of inc
   // - print out the array
-  int arr[7] = { 0, 1, 4, 9, 16, 25, 36 };
+  int arr[size];
   int *p = arr;
   int i;
-   
-  arrayAdd(p, 7, 10); 
-
-  for (i = 0; i < 7; i++)
+  
+  for (int i = 0; i < size; i++)
   {
+	arr[i] = i*i;
+	arrayAdd(p, size, inc); 
 	printf("%d\n", arr[i]);
   }
 
