@@ -38,8 +38,8 @@ int main(int argc, char* argv[])
   // add your code below to call areaOfCircle function with values between
   // start and end
   for (int i = 0; i < reps; i++){
-     float area = areaOfCircle(start);
-     printf ("Area of a cirlce with a radius of %f is %f\n",start, area);
+     float result = areaOfCircle(start);
+     printf ("Area of a cirlce with a radius of %f is %f\n",start, result);
      start = start + 1;
   }
 }
