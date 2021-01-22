@@ -13,6 +13,9 @@ int CHARS_LEN = 62;
 
 char shiftChar(char c, int shift, int direction)
 {
+if( c == ' '){
+return c;
+}
   for (int i = 0; i < CHARS_LEN; i++)
   {
 	if (CHARS[i] == c)
